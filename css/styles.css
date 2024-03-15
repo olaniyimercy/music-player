@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/background.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    background-color: #fff;
+    border-radius: .3rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.container__icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+.container__icons-images {
+    width: 1.5rem;
+}
+
+.container__flip-book {
+    position: relative;
+    width: 21.5rem;
+    height: 25rem;
+    perspective: 1500px;
+}
+
+.container__flip {
+    width: 106%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0.72px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(-24deg);
+    background-image: url(../img/kanye.jpg);
+    background-position: -12.5rem;
+    background-size: cover;
+}
+
+.container__photo {
+    width: 20rem;
+    height: 25rem;
+    background-image: url(../img/kanye.jpg);
+    background-size: cover;
+    background-position: -2rem;
+    border-radius: .5rem 0rem 0rem .5rem;
+}
+
+#p2 {
+    z-index: 3;
+}
